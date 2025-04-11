@@ -1,9 +1,9 @@
 <?php
 // Configurações do banco de dados
 $host = 'localhost';
-$dbname = 'bdLibre';
-$username = 'root';
-$password = '';
+$dbname = 'u591493152_db_libre';
+$username = 'u591493152_Libre';
+$password = 'LM:~/D=G6f+';
 
 try {
     $conexao = new PDO(
