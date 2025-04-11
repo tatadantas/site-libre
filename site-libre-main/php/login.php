@@ -57,9 +57,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["Botao"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
     <title>Login</title>
 </head>
+<div class="principal">
+        <div class="tela-esquerda">
+            <h1>Que bom te ver novamente!<br>Faça seu login para poder fazer avaliações <br>e postar sobre seus livros favoritos!</h1>
+           <img src="img/login.jpg" class="img-esquerda" alt="Imagem de três pessoas e um cadeado, representando a realização do login">
+        </div>
 <body>
+    <div class="tela-direita">
+    <div class="box-login">
     <h1>Login</h1>
     
     <?php if (isset($erro)): ?>
@@ -69,18 +77,20 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST["Botao"])) {
     <form method="POST">
         <div>
             <label>Email ou Username:</label>
-            <input type="text" name="usuario_login" required>
+            <input type="text" name="usuario_login" required placeholder="E-mail ou Usuário">
         </div>
         
         <div>
             <label>Senha:</label>
-            <input type="password" name="senha_usuario" required>
+            <input type="password" name="senha_usuario" required placeholder="Senha">
         </div>
         
-        <button type="submit" name="Botao" value="Logar">Entrar</button>
+        <button type="submit" name="botao" value="logar">Entrar</button>
     </form>
     
     <p>Não possui um cadastro? <a href="cadastro.php">Cadastre-se</a></p>
     <p><a href="esquecisenha.php">Esqueceu a senha?</a></p>
+    </div>
+    </div>
 </body>
 </html>
