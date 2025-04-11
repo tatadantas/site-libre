@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
-
-    <title>Document</title>
+    <title>Libre</title>
 </head>
-<body>
     <header>
         <div class="header1"> <!--div header-->
             <div class="logo fonte2">LIBRE</div>
 
-            <div class="navbar"> <!--local da barra de pesquisa-->
+            <nav class="navbar"> <!--local da barra de pesquisa-->
                 <form action="#" method="POST">
                     <input type="text" class="barra"> <!--Será que é Search??-->
                     <button class='btnPesq' type="submit">
@@ -128,7 +127,7 @@
                     </div>
     
                 </div>
-            </div>
+            </nav>
 
             <div class="outros">
                 <div class="outroslayout fonte1">Descubra</div>
@@ -144,9 +143,9 @@
 
                             <ul>
                                 <li>
-                                    <a href="">
+                                    <a href="php/login.php">
                                         <span>
-                                            Link1
+                                            Login
                                         </span>
                                     </a>
                                 </li>
@@ -192,10 +191,34 @@
 
         </div> <!--div header-->
     </header>
+    
+    <main>
+        <body>
+            <div class="container">
+                <div class="box">
+                    <h1>LIBRE</h1>
+                    <p>Sua mais nova plataforma virtual focada em leitura e escrita.</p>
+                    <h2>Leia. Avalie. Comente.
+
+                    </h2>
+                </div>
+                <div class="box">
+                    <p>Sinta-se livre para explorar.<br>
+                    Leia um livro, veja avaliações,<br>
+                    coloque um comentário e brilhe!</p>
+                    <br>
+                    <p>Conheça os nossos livros:<a href="./php/catalogo.php">Teste***</a>                    </p>
+                </div>
+                <div class="box">
+                    <p>Baixe o <strong>LIBRE</strong> no seu dispositivo móvel!<br>
+                    Leia mais e comente de onde quiser!<br>
+                    Disponível para dispositivos iOS e Android.</p>
+                </div>
+            </div>
+    </main>
 
 
-    <main></main>
-
+    
     <footer>
         <div class="footer">
             <label class="fonte2" id="titulofooter">LIBRE</label>
@@ -261,10 +284,6 @@
             </div>
         </div>
     </footer>
-
-
-
-
 
     <script src="js/java.js"></script>
 </body>
